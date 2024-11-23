@@ -10,7 +10,11 @@ const axios = require('axios');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 const port = process.env.PORT || 3000;
 const driver = new MongoDriver(process.env.URL);
