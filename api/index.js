@@ -11,9 +11,7 @@ const axios = require('axios');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: '*', // Allow all origins
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: 'https://miniature-space-xylophone-69r575gvr6j9hrp9r-5173.app.github.dev' // Or use '*' for all origins
 }));
 
 const port = process.env.PORT || 3000;
