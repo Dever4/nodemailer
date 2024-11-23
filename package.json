@@ -1,0 +1,21 @@
+{
+  "name": "otp-api",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "nodemailer": "^6.6.3",
+    "quick.db": "^7.1.0",
+    "quickmongo": "^2.0.1",
+    "crypto": "^1.0.1",
+    "validator": "^13.7.0",
+    "axios": "^1.4.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
